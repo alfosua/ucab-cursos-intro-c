@@ -166,7 +166,7 @@ export const slidesData: Record<number, Slide[]> = {
         "3. ¡Extra! Intenta imprimir un pequeño arte ASCII (como una carita feliz) usando caracteres."
       ],
       terminal: `$ ./presentacion\n====================\nNombre: Alex\nEdad: 20\nOcupación: Estudiante\n====================\n  \\(^_^)/  `,
-      solutionUrl: "https://github.com/alfosuag/curso-c-ucab/blob/main/proyectos/01_presentacion.c"
+      solutionUrl: "https://github.com/alfosua/ucab-cursos-intro-c/blob/main/examples/01_carta_presentacion.c"
     }
   ],
   5: [
@@ -358,7 +358,7 @@ export const slidesData: Record<number, Slide[]> = {
         "3. Usa 'printf' para mostrar los resultados de forma clara."
       ],
       terminal: `$ ./calculadora\nIngresa el primer número: 10\nIngresa el segundo número: 2\nSuma: 12\nResta: 8\nMultiplicación: 20\nDivisión: 5`,
-      solutionUrl: "https://github.com/alfosuag/curso-c-ucab/blob/main/proyectos/02_calculadora.c"
+      solutionUrl: "https://github.com/alfosua/ucab-cursos-intro-c/blob/main/examples/02_calculadora.c"
     }
   ],
   9: [
@@ -444,7 +444,7 @@ export const slidesData: Record<number, Slide[]> = {
         "4. Felicítalo cuando acierte y termina el bucle."
       ],
       terminal: `$ ./adivina\nIngresa un número: 50\nEl número secreto es menor.\nIngresa un número: 25\nEl número secreto es mayor.\nIngresa un número: 42\n¡Correcto! Adivinaste el número.`,
-      solutionUrl: "https://github.com/alfosuag/curso-c-ucab/blob/main/proyectos/03_adivina.c"
+      solutionUrl: "https://github.com/alfosua/ucab-cursos-intro-c/blob/main/examples/03_adivina_numero.c"
     }
   ],
   12: [
@@ -575,7 +575,7 @@ export const slidesData: Record<number, Slide[]> = {
         "4. Llama a la función correspondiente e imprime el resultado."
       ],
       terminal: `$ ./conversor\n1. Celsius a Fahrenheit\n2. Fahrenheit a Celsius\nElige: 1\nGrados C: 25\nResultado: 77.00 F`,
-      solutionUrl: "https://github.com/alfosuag/curso-c-ucab/blob/main/proyectos/04_conversor.c"
+      solutionUrl: "https://github.com/alfosua/ucab-cursos-intro-c/blob/main/examples/04_conversor.c"
     }
   ],
   16: [
@@ -686,7 +686,7 @@ export const slidesData: Record<number, Slide[]> = {
         "4. Encuentra e imprime cuál fue la nota más alta y a qué estudiante pertenece."
       ],
       terminal: `$ ./notas\nNombre 1: Ana\nNota 1: 15\nNombre 2: Luis\nNota 2: 18\n...\n\nPromedio: 16.2\nNota más alta: 18 (Luis)`,
-      solutionUrl: "https://github.com/alfosuag/curso-c-ucab/blob/main/proyectos/05_calificaciones.c"
+      solutionUrl: "https://github.com/alfosua/ucab-cursos-intro-c/blob/main/examples/05_calificaciones.c"
     }
   ],
   19: [
@@ -763,7 +763,7 @@ export const slidesData: Record<number, Slide[]> = {
         "3. En el `main`, declara dos variables, imprímelas, llama a `swap` pasándole las direcciones, y vuelve a imprimirlas para verificar el cambio."
       ],
       terminal: `$ ./swap\nAntes: x = 10, y = 20\nDespués: x = 20, y = 10`,
-      solutionUrl: "https://github.com/alfosuag/curso-c-ucab/blob/main/proyectos/06_swap.c"
+      solutionUrl: "https://github.com/alfosua/ucab-cursos-intro-c/blob/main/examples/06_intercambio.c"
     }
   ],
   22: [
@@ -861,7 +861,7 @@ export const slidesData: Record<number, Slide[]> = {
         "5. ¡Extra! Al salir del programa, guarda el inventario en un archivo `inventario.txt`. Al iniciar, lee el archivo para cargar los datos."
       ],
       terminal: `$ ./inventario\n--- MENÚ ---\n1. Agregar Producto\n2. Mostrar Inventario\n3. Vender Producto\n4. Salir\nElige una opción: `,
-      solutionUrl: "https://github.com/alfosuag/curso-c-ucab/blob/main/proyectos/07_inventario.c"
+      solutionUrl: "https://github.com/alfosua/ucab-cursos-intro-c/blob/main/examples/07_inventario.c"
     }
   ]
 };

@@ -21,7 +21,7 @@ int main() {
     }
 
     printf("\nPromedio: %.1f\n", suma / MAX_ESTUDIANTES);
-    printf("Nota más alta: %.g (%s)\n", max_nota, mejor_estudiante);
+    printf("Nota más alta: %g (%s)\n", max_nota, mejor_estudiante);
 
     return 0;
 }

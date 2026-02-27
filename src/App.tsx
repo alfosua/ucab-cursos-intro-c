@@ -248,9 +248,9 @@ export default function App() {
               <h1 className="font-semibold text-sm sm:text-lg tracking-tight leading-tight">Curso de Introducción a C</h1>
               <div className="flex items-center gap-1.5">
                 <span className="text-slate-400 text-[10px] sm:text-sm leading-none">por</span>
-                <div className="h-5 sm:h-8 flex items-center justify-center overflow-hidden" title="Logo UCAB">
+                <a href="https://www.ucab.edu.ve" target="_blank" rel="noopener noreferrer" className="h-5 sm:h-8 flex items-center justify-center overflow-hidden hover:opacity-80 transition-opacity" title="Universidad Católica Andrés Bello">
                   <img src={ucabWide} alt="UCAB" className="h-full w-auto object-contain" referrerPolicy="no-referrer" />
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -411,17 +411,17 @@ export default function App() {
       <footer className="bg-white border-t border-slate-200 py-8 mt-auto">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-4">
-            <div className="w-12 h-12 overflow-hidden shrink-0">
+            <a href="https://www.ucab.edu.ve" target="_blank" rel="noopener noreferrer" className="w-12 h-12 overflow-hidden shrink-0 hover:opacity-80 transition-opacity">
               <img src={ucabSquare} alt="UCAB Logo" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
-            </div>
+            </a>
             <div>
-              <p className="font-semibold text-slate-900">Universidad Católica Andrés Bello</p>
+              <a href="https://www.ucab.edu.ve" target="_blank" rel="noopener noreferrer" className="font-semibold text-slate-900 hover:text-indigo-600 transition-colors">Universidad Católica Andrés Bello</a>
               <p className="text-sm text-slate-500">Escuela de Ingeniería Informática - Sede Guayana</p>
             </div>
           </div>
           <div className="text-center md:text-right">
             <p className="text-sm text-slate-500">Tutor</p>
-            <p className="font-medium text-slate-900">Alfonso Suarez</p>
+            <a href="https://github.com/alfosua" target="_blank" rel="noopener noreferrer" className="font-medium text-slate-900 hover:text-indigo-600 transition-colors">Alfonso Suarez</a>
           </div>
         </div>
       </footer>
@@ -462,17 +462,17 @@ export default function App() {
             
             <div className="bg-slate-50 rounded-xl p-6 mb-8 text-left">
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 overflow-hidden shrink-0">
+                <a href="https://www.ucab.edu.ve" target="_blank" rel="noopener noreferrer" className="w-12 h-12 overflow-hidden shrink-0 hover:opacity-80 transition-opacity">
                   <img src={ucabSquare} alt="UCAB Logo" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
-                </div>
+                </a>
                 <div>
-                  <p className="font-semibold text-slate-900">Universidad Católica Andrés Bello</p>
+                  <a href="https://www.ucab.edu.ve" target="_blank" rel="noopener noreferrer" className="font-semibold text-slate-900 hover:text-indigo-600 transition-colors">Universidad Católica Andrés Bello</a>
                   <p className="text-xs text-slate-500">Escuela de Ingeniería Informática - Sede Guayana</p>
                 </div>
               </div>
               <div className="border-t border-slate-200 pt-4 mt-4">
                 <p className="text-xs text-slate-500 uppercase tracking-wider font-semibold mb-1">Tutor</p>
-                <p className="font-medium text-slate-900">Alfonso Suarez</p>
+                <a href="https://github.com/alfosua" target="_blank" rel="noopener noreferrer" className="font-medium text-slate-900 hover:text-indigo-600 transition-colors">Alfonso Suarez</a>
               </div>
             </div>
 
