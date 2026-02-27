@@ -13,7 +13,8 @@ export interface Slide {
   cards?: {
     title: string;
     description: string;
-    icon: string;
+    icon?: string;
+    image?: string;
     link?: string;
   }[];
 }
@@ -108,6 +109,32 @@ export const slidesData: Record<number, Slide[]> = {
       ]
     },
     {
+      title: "Distribuciones de Linux",
+      content: [
+        "Si decides instalar Linux, existen muchas distribuciones. Estas son tres excelentes opciones:"
+      ],
+      cards: [
+        {
+          title: "Ubuntu",
+          description: "La distribución más popular para escritorio. Es muy amigable y tiene una comunidad inmensa.",
+          image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Ubuntu_logoib.svg/60px-Ubuntu_logoib.svg.png",
+          link: "https://ubuntu.com/"
+        },
+        {
+          title: "Linux Mint",
+          description: "Basada en Ubuntu, ofrece una interfaz muy familiar para los usuarios de Windows.",
+          image: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Linux_Mint_logo_without_wordmark.svg",
+          link: "https://linuxmint.com/"
+        },
+        {
+          title: "Debian",
+          description: "Una de las distribuciones más antiguas y la base de Ubuntu. Destaca por su extrema estabilidad.",
+          image: "https://upload.wikimedia.org/wikipedia/commons/6/66/Openlogo-debianV2.svg",
+          link: "https://www.debian.org/"
+        }
+      ]
+    },
+    {
       title: "Comandos Básicos de Terminal",
       content: [
         "Si utilizas Linux o WSL, interactuarás mucho con la terminal. Aquí tienes los comandos esenciales:"
@@ -123,16 +150,6 @@ export const slidesData: Record<number, Slide[]> = {
           ["code .", "Abre VS Code en la carpeta actual", "code ."]
         ]
       }
-    },
-    {
-      title: "El Proceso de Compilación",
-      content: [
-        "El código en C pasa por 4 etapas antes de ejecutarse:",
-        "1. Preprocesador: Resuelve las directivas como #include.",
-        "2. Compilador: Traduce el código a lenguaje ensamblador.",
-        "3. Ensamblador: Convierte el ensamblador a código objeto (binario).",
-        "4. Enlazador (Linker): Une tu código con las librerías externas para crear el ejecutable."
-      ]
     }
   ],
   3: [
@@ -152,6 +169,16 @@ export const slidesData: Record<number, Slide[]> = {
         "Luego, para ejecutar el programa compilado, llamas al archivo generado."
       ],
       terminal: `$ gcc hola.c -o hola\n$ ./hola\n¡Hola, Mundo!`
+    },
+    {
+      title: "El Proceso de Compilación",
+      content: [
+        "El código en C pasa por 4 etapas antes de ejecutarse:",
+        "1. Preprocesador: Resuelve las directivas como #include.",
+        "2. Compilador: Traduce el código a lenguaje ensamblador.",
+        "3. Ensamblador: Convierte el ensamblador a código objeto (binario).",
+        "4. Enlazador (Linker): Une tu código con las librerías externas para crear el ejecutable."
+      ]
     }
   ],
   4: [

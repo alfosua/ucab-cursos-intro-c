@@ -97,7 +97,7 @@ export default function SlideViewer({ topicId, topicTitle, hasNextTopic, hasPrev
 
   const progress = ((activeIndex + 1) / slides.length) * 100;
 
-  const renderIcon = (iconName: string) => {
+  const renderIcon = (iconName?: string) => {
     switch (iconName) {
       case 'Code2': return <Code2 className="w-8 h-8" />;
       case 'TerminalSquare': return <TerminalSquare className="w-8 h-8" />;
@@ -220,8 +220,12 @@ export default function SlideViewer({ topicId, topicTitle, hasNextTopic, hasPrev
                   {currentSlide.cards.map((card, idx) => {
                     const CardContent = (
                       <div className="h-full p-6 bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center gap-4">
-                        <div className="p-3 bg-indigo-50 text-indigo-600 rounded-lg">
-                          {renderIcon(card.icon)}
+                        <div className="p-3 bg-indigo-50 text-indigo-600 rounded-lg flex items-center justify-center">
+                          {card.image ? (
+                            <img src={card.image} alt={`${card.title} logo`} className="w-10 h-10 object-contain" />
+                          ) : (
+                            renderIcon(card.icon)
+                          )}
                         </div>
                         <h3 className="font-semibold text-slate-900 text-lg">{card.title}</h3>
                         <p className="text-slate-600 text-sm leading-relaxed">{card.description}</p>
