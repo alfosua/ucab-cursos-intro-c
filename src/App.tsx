@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { CheckCircle2, Circle, PlayCircle, BookOpen, Presentation, Terminal, RotateCcw, Play, Github } from 'lucide-react';
 import SlideViewer from './components/SlideViewer';
+import ucabWide from '../assets/ucab_wide.png';
+import ucabSquare from '../assets/ucab_square.png';
 
 type Status = 'not-started' | 'in-progress' | 'completed';
 
@@ -239,7 +241,7 @@ export default function App() {
               <div className="flex items-center gap-1.5">
                 <span className="text-slate-400 text-[10px] sm:text-sm leading-none">por</span>
                 <div className="h-5 sm:h-8 flex items-center justify-center overflow-hidden" title="Logo UCAB">
-                  <img src="/assets/ucab_wide.webp" alt="UCAB" className="h-full w-auto object-contain" referrerPolicy="no-referrer" />
+                  <img src={ucabWide} alt="UCAB" className="h-full w-auto object-contain" referrerPolicy="no-referrer" />
                 </div>
               </div>
             </div>
@@ -378,7 +380,7 @@ export default function App() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 overflow-hidden shrink-0">
-              <img src="/assets/ucab_square.webp" alt="UCAB Logo" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+              <img src={ucabSquare} alt="UCAB Logo" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
             </div>
             <div>
               <p className="font-semibold text-slate-900">Universidad Católica Andrés Bello</p>
@@ -429,7 +431,7 @@ export default function App() {
             <div className="bg-slate-50 rounded-xl p-6 mb-8 text-left">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 overflow-hidden shrink-0">
-                  <img src="/assets/ucab_square.webp" alt="UCAB Logo" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                  <img src={ucabSquare} alt="UCAB Logo" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                 </div>
                 <div>
                   <p className="font-semibold text-slate-900">Universidad Católica Andrés Bello</p>
