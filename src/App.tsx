@@ -19,34 +19,42 @@ const initialData: CourseItem[] = [
   { id: 1, module: '1. Introducción', topic: '¿Qué es C?', description: 'Historia y características del lenguaje C.', status: 'not-started', link: '#' },
   { id: 2, module: '1. Introducción', topic: 'Entorno de Desarrollo', description: 'Instalación de GCC y configuración del IDE.', status: 'not-started', link: '#' },
   { id: 3, module: '1. Introducción', topic: 'Hola Mundo', description: 'Tu primer programa en C y estructura básica.', status: 'not-started', link: '#' },
-  { id: 4, module: '1. Introducción', topic: 'Proyecto Práctico', description: 'Crea tu carta de presentación en la terminal.', status: 'not-started', link: '#' },
+  { id: 4, module: '1. Introducción', topic: 'Proyecto Práctico', description: 'Crea tu carta de presentación en la terminal.', status: 'not-started', link: 'https://github.com/alfosua/ucab-cursos-intro-c/blob/main/examples/01_carta_presentacion.c' },
   { id: 5, module: '2. Conceptos Básicos', topic: 'Variables y Tipos', description: 'int, float, char, double y modificadores.', status: 'not-started', link: '#' },
   { id: 6, module: '2. Conceptos Básicos', topic: 'Operadores', description: 'Aritméticos, lógicos y relacionales.', status: 'not-started', link: '#' },
   { id: 7, module: '2. Conceptos Básicos', topic: 'Entrada y Salida', description: 'Uso de printf y scanf para interactuar.', status: 'not-started', link: '#' },
-  { id: 8, module: '2. Conceptos Básicos', topic: 'Proyecto Práctico', description: 'Desarrolla una calculadora interactiva.', status: 'not-started', link: '#' },
+  { id: 8, module: '2. Conceptos Básicos', topic: 'Proyecto Práctico', description: 'Desarrolla una calculadora interactiva.', status: 'not-started', link: 'https://github.com/alfosua/ucab-cursos-intro-c/blob/main/examples/02_calculadora.c' },
   { id: 9, module: '3. Control de Flujo', topic: 'Condicionales', description: 'Uso de if, else if, else y switch.', status: 'not-started', link: '#' },
   { id: 10, module: '3. Control de Flujo', topic: 'Bucles', description: 'Estructuras for, while y do-while.', status: 'not-started', link: '#' },
-  { id: 11, module: '3. Control de Flujo', topic: 'Proyecto Práctico', description: 'Juego de adivinar el número secreto.', status: 'not-started', link: '#' },
+  { id: 11, module: '3. Control de Flujo', topic: 'Proyecto Práctico', description: 'Juego de adivinar el número secreto.', status: 'not-started', link: 'https://github.com/alfosua/ucab-cursos-intro-c/blob/main/examples/03_adivina_numero.c' },
   { id: 12, module: '4. Funciones', topic: 'Definición y Uso', description: 'Creación de funciones y retorno de valores.', status: 'not-started', link: '#' },
   { id: 13, module: '4. Funciones', topic: 'Paso de Parámetros', description: 'Diferencia entre paso por valor y referencia.', status: 'not-started', link: '#' },
   { id: 14, module: '4. Funciones', topic: 'Librerías y Cabeceras', description: 'Directiva #include y archivos .h estándar.', status: 'not-started', link: '#' },
-  { id: 15, module: '4. Funciones', topic: 'Proyecto Práctico', description: 'Conversor de unidades modular.', status: 'not-started', link: '#' },
+  { id: 15, module: '4. Funciones', topic: 'Proyecto Práctico', description: 'Conversor de unidades modular.', status: 'not-started', link: 'https://github.com/alfosua/ucab-cursos-intro-c/blob/main/examples/04_conversor.c' },
   { id: 16, module: '5. Arreglos', topic: 'Arreglos Unidimensionales', description: 'Declaración e iteración de arreglos.', status: 'not-started', link: '#' },
   { id: 17, module: '5. Arreglos', topic: 'Cadenas (Strings)', description: 'Arreglos de caracteres y <string.h>.', status: 'not-started', link: '#' },
-  { id: 18, module: '5. Arreglos', topic: 'Proyecto Práctico', description: 'Gestor de calificaciones de estudiantes.', status: 'not-started', link: '#' },
+  { id: 18, module: '5. Arreglos', topic: 'Proyecto Práctico', description: 'Gestor de calificaciones de estudiantes.', status: 'not-started', link: 'https://github.com/alfosua/ucab-cursos-intro-c/blob/main/examples/05_calificaciones.c' },
   { id: 19, module: '6. Punteros', topic: 'Conceptos Básicos', description: 'Direcciones de memoria y el operador * y &.', status: 'not-started', link: '#' },
   { id: 20, module: '6. Punteros', topic: 'Aritmética de Punteros', description: 'Navegación de arreglos usando punteros.', status: 'not-started', link: '#' },
-  { id: 21, module: '6. Punteros', topic: 'Proyecto Práctico', description: 'Intercambio seguro de variables.', status: 'not-started', link: '#' },
+  { id: 21, module: '6. Punteros', topic: 'Proyecto Práctico', description: 'Intercambio seguro de variables.', status: 'not-started', link: 'https://github.com/alfosua/ucab-cursos-intro-c/blob/main/examples/06_intercambio.c' },
   { id: 22, module: '7. Conceptos Avanzados', topic: 'Structs', description: 'Agrupación de datos heterogéneos.', status: 'not-started', link: '#' },
   { id: 23, module: '7. Conceptos Avanzados', topic: 'Memoria Dinámica', description: 'Asignación de memoria en tiempo de ejecución.', status: 'not-started', link: '#' },
   { id: 24, module: '7. Conceptos Avanzados', topic: 'Archivos', description: 'Manejo de archivos con fopen, fprintf, fscanf.', status: 'not-started', link: '#' },
-  { id: 25, module: '7. Conceptos Avanzados', topic: 'Proyecto Final', description: 'Sistema integral de inventario.', status: 'not-started', link: '#' },
+  { id: 25, module: '7. Conceptos Avanzados', topic: 'Proyecto Final', description: 'Sistema integral de inventario.', status: 'not-started', link: 'https://github.com/alfosua/ucab-cursos-intro-c/blob/main/examples/07_inventario.c' },
 ];
 
 export default function App() {
   const [data, setData] = useState<CourseItem[]>(() => {
     const saved = localStorage.getItem('courseData');
-    return saved ? JSON.parse(saved) : initialData;
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      return parsed.map((item: CourseItem) => {
+        const initialItem = initialData.find(i => i.id === item.id);
+        if (initialItem) return { ...item, link: initialItem.link };
+        return item;
+      });
+    }
+    return initialData;
   });
   const [activeTopicId, setActiveTopicId] = useState<number | null>(null);
   const [startAtEnd, setStartAtEnd] = useState(false);
@@ -278,7 +286,7 @@ export default function App() {
               {lastSeen ? 'Continuar Curso' : 'Iniciar Curso'}
             </button>
             <a 
-              href="https://github.com/alfosuag/curso-c-ucab"
+              href="https://github.com/alfosua/ucab-cursos-intro-c/tree/main/examples"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-lg font-medium transition-colors shadow-sm"
@@ -347,17 +355,41 @@ export default function App() {
                         {getStatusText(item.status)}
                       </button>
                       
-                      {/* Mobile link button */}
-                      <button 
-                        onClick={() => navigateToTopic(item.id, null, false)}
-                        className="md:hidden inline-flex items-center justify-center w-8 h-8 rounded-lg text-slate-400 hover:text-indigo-600 hover:bg-indigo-50 transition-colors"
-                        title="Ver presentación"
-                      >
-                        <Presentation className="w-4 h-4" />
-                      </button>
+                      {/* Mobile action buttons */}
+                      <div className="md:hidden flex items-center gap-1">
+                        {item.link !== '#' && (
+                          <a 
+                            href={item.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center w-8 h-8 rounded-lg text-slate-400 hover:text-slate-900 hover:bg-slate-100 transition-colors"
+                            title="Ver código fuente"
+                          >
+                            <Github className="w-4 h-4" />
+                          </a>
+                        )}
+                        <button 
+                          onClick={() => navigateToTopic(item.id, null, false)}
+                          className="inline-flex items-center justify-center w-8 h-8 rounded-lg text-slate-400 hover:text-indigo-600 hover:bg-indigo-50 transition-colors"
+                          title="Ver presentación"
+                        >
+                          <Presentation className="w-4 h-4" />
+                        </button>
+                      </div>
                     </div>
                     
-                    <div className="hidden md:block text-center">
+                    <div className="hidden md:flex items-center justify-center gap-1">
+                      {item.link !== '#' && (
+                        <a 
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center w-8 h-8 rounded-lg text-slate-400 hover:text-slate-900 hover:bg-slate-100 transition-colors"
+                          title="Ver código fuente"
+                        >
+                          <Github className="w-4 h-4" />
+                        </a>
+                      )}
                       <button 
                         onClick={() => navigateToTopic(item.id, null, false)}
                         className="inline-flex items-center justify-center w-8 h-8 rounded-lg text-slate-400 hover:text-indigo-600 hover:bg-indigo-50 transition-colors"
